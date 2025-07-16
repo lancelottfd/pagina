@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con Nosotros - Música Pro</title>
+    <link href="Styles/trabajaconnosostros.css" rel="stylesheet" type="text/css"/>
+    <link href="Styles/inicio.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Encabezado">
+                <div class="logo">Musica para todos
+                    <img class="imagen" src="imagenes/logo.jpg">
+                </div> 
+                <div class="unir_carrito">
+                    <!-- 🔍 BARRA DE BÚSQUEDA FUNCIONAL CON REDIRECCIÓN -->
+                    <form id="formBusqueda" onsubmit="redirigir(); return false;">
+                        <input type="text" id="buscador" placeholder="¿Qué estás buscando?" />
+                        <button type="submit">Buscar</button>
+                    </form>
+
+                    <a href="carrito.html" class="carrito">🛒 Carrito de compras
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <a href="inicio.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="#Categorias" class="dropbtn">Categorías▼</a>
+                    <div class="dropdown-content">
+                        <a href="GUITARRAS.html">Guitarras</a>
+                        <a href="BAJOS.html">Bajos</a>
+                        <a href="BATERIA.html">Baterías</a>
+                        <a href="PIANOS.html">Teclados</a>
+                        <a href="accesorios.html">Accesorios</a>
+                    </div>
+                </div>
+                <a href="INICIAR SECCION.html">Iniciar Sesion</a>
+                <a href="soporte.html">Contacto y Soporte</a>
+                <a href="sobre nosotros.html">Sobre Nosotros</a>
+                <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                <a href="AprenderATocar.html">Profesores</a>
+            </nav>
+        </div>
+        <div class="marquesina">
+            ¡Descuento del 20% en los 2 primeros productos comprados! 🎶 
+        </div>
+    </header>   
+    
+    <div class="container">
+        <div class="banner-image">
+            <img src="imagenes/gentetrabajando2.jpg" alt=""/>
+        </div>
+        
+        <div class="titulo-formulario">
+          <h1>¿Qué esperas para unirte a nuestra familia?</h1>
+          <p class="subtitulo">Rellena el siguiente formulario con tus datos</p>
+        </div>
+        
+        <form class="form-section">
+            <h2>Nombre y Apellidos</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombres completos</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellidos completos</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>            
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni" name="dni" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" min="18" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Correo electrónico (vigente)</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="departamento">Selecciona departamento</label>
+                    <select id="departamento" name="departamento" required>
+                    <option value="">Seleccione...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="provincia">Selecciona provincia</label>
+                    <select id="provincia" name="provincia" required>
+                    <option value="">Seleccione...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="distrito">Selecciona distrito</label>
+                    <select id="distrito" name="distrito" required>
+                    <option value="">Seleccione...</option>
+                    </select>
+                </div>
+            </div>
+        
+            <hr>
+        
+            <h3>Distrito donde quiero trabajar</h3>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="sucursal">Sucursal preferida</label>
+                    <select id="sucursal" name="sucursal" required>
+                        <option value="">Seleccione...</option>
+                        <option value="central">Central</option>
+                        <option value="norte">Norte</option>
+                        <option value="sur">Sur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tiempo">Tiempo de experiencia</label>
+                    <select id="tiempo" name="tiempo">
+                        <option value="">Seleccione...</option>
+                        <option value="0">Sin experiencia</option>
+                        <option value="1">1 año</option>
+                        <option value="2">2+ años</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>¿En qué horarios podrías trabajar?</label>
+                </div>
+            </div>
+            
+        <div class="horarios-container">
+            <label class="checkbox-label">
+                <input type="checkbox" id="horario1" name="horario1" value="mañana">
+                <span class="checkmark"></span>
+                Turno mañana (8:00am - 2:00pm)
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" id="horario2" name="horario2" value="tarde">
+                <span class="checkmark"></span>
+                Turno tarde (2:00pm - 8:00pm)
+            </label>
+
+        </div>           
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="puesto">Selecciona puesto de interés</label>
+                    <select id="puesto" name="puesto" required>
+                        <option value="">Seleccione...</option>
+                        <option value="ventas">Vendedor</option>
+                        <option value="almacen">Almacénero</option>
+                        <option value="tecnico">Técnico de Instrumentos</option>
+                        <option value="tecnico">cajero</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="conocimiento">¿Cómo te enteraste de nosotros?</label>
+                    <select id="conocimiento" name="conocimiento">
+                        <option value="">Seleccione...</option>
+                        <option value="web">Página Web</option>
+                        <option value="redes">Redes Sociales</option>
+                        <option value="amigo">Recomendación</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row" style="justify-content: center;">
+                <button type="submit" class="submit-btn">Enviar</button>
+            </div>
+        </form>
+        
+    </div>
+    <footer class="pie">
+        <div class="contenedor-pie">
+            <!-- Columna Horarios -->
+            <div class="columna">
+                <h3>Horarios de Atención</h3>
+                <div>
+                    <h4>Tienda Online</h4>
+                    <p>24/7 los 365 días</p>
+                </div>
+                <div>
+                    <h4>Tienda Física</h4>
+                    <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+                    <p>Sábados: 10:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Columna Contacto -->
+            <div class="columna">
+                <h3>Contacto</h3>
+                <div>
+                    <h4>Dirección:</h4>
+                    <p>Av. Parra 203, Arequipa</p>
+                    
+                    <h4>WhatsApp:</h4>
+                    <p><img src="imagenes/whatsapp.jpg" class="icono" alt="WhatsApp"> +51 999 999 999</p>
+                    
+                    <h4>Correo:</h4>
+                    <p><img src="imagenes/gmail.png" class="icono" alt="Email"> info@musicaparatodos.com</p>
+                    
+                    <h4>Redes Sociales:</h4>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/share/1CcAUHuAao/"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.tiktok.com/@musicaparatodos58?_t=ZM-8wjmH0Kyduv&_r=1"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Enlaces -->
+            <div class="columna">
+                <h3>Enlaces Rápidos</h3>
+                <div>
+                    <a href="sobre nosotros.html">Sobre Nosotros</a>
+                    <a href="soporte.html">Contacto y Soporte</a>
+                    <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="derechos">
+            <p>© 2025 Música para Todos</p>
+        </div>
+    <script src="java/inicio.js" type="text/javascript"></script>
+    <script src="java/Trabaja con nosotros.js" type="text/javascript"></script>
+</body>
+</html>

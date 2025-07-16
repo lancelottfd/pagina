@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Musica para todos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/inicio.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Encabezado">
+                <div class="logo">Musica para todos
+                    <img class="imagen" src="imagenes/logo.jpg">
+                </div> 
+                <div class="unir_carrito">
+                    <!-- 🔍 BARRA DE BÚSQUEDA FUNCIONAL CON REDIRECCIÓN -->
+                    <form id="formBusqueda" onsubmit="redirigir(); return false;">
+                        <input type="text" id="buscador" placeholder="¿Qué estás buscando?" />
+                        <button type="submit">Buscar</button>
+                    </form>
+
+                    <a href="carrito.html" class="carrito">🛒 Carrito de compras
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <a href="inicio.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="#Categorias" class="dropbtn">Categorías▼</a>
+                    <div class="dropdown-content">
+                        <a href="GUITARRAS.html">Guitarras</a>
+                        <a href="BAJOS.html">Bajos</a>
+                        <a href="BATERIA.html">Baterías</a>
+                        <a href="PIANOS.html">Teclados</a>
+                        <a href="accesorios.html">Accesorios</a>
+                    </div>
+                </div>
+                <a href="INICIAR SECCION.html">Iniciar Sesion</a>
+                <a href="soporte.html">Contacto y Soporte</a>
+                <a href="sobre nosotros.html">Sobre Nosotros</a>
+                <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                <a href="AprenderATocar.html">Profesores</a>
+            </nav>
+        </div>
+        <div class="marquesina">
+            ¡Descuento del 20% en los 2 primeros productos comprados! 🎶 
+        </div>
+    </header>                
+    
+    <section class="carrusel-container">
+        <h2 class="titulo"> Conoce lo más reciente </h2>
+        <div class="slider-box">
+            <ul>
+                <li>
+                    <img src="imagenes/carrusel_bajos.jpg" alt="">
+                    <div class="texto">
+                        <h2>Mueve esas manos</h2>
+                    </div>
+                </li>
+                <li>
+                    <img src="imagenes/carrusel_bateria.jpg" alt="">
+                    <div class="texto">
+                        <h2>Desata el fuego de tu interior</h2>
+                    </div>
+                </li>
+                <li>
+                    <img src="imagenes/carrusel_guitarras.jpg" alt="">
+                    <div class="texto">
+                        <h2>Ajusta la melodía de tu corazón</h2>
+                    </div>
+                </li>
+                <li>
+                    <img src="imagenes/carrusel_teclado.jpg" alt="">
+                    <div class="texto">
+                        <h2>Vence lo invencible</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="ofertas-container">
+        <h2 class="ofertas-titulo">Últimas ofertas</h2>
+        
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="producto-card">
+                <img src="imagenes/guitarra electrica.jpg" alt="Bajo eléctrico" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Memphis EB-224 Verde azulado</h3>
+                    <p class="producto-precio">S/569.90</p>
+                    <button class="producto-boton btn-agregar-carrito" 
+                            data-id="prod1"
+                            data-nombre="Memphis EB-224 Verde azulado"
+                            data-precio="569.90"
+                            data-imagen="imagenes/guitarra electrica.jpg">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="producto-card">
+                <img src="imagenes/teclado electrico.jpg" alt="Teclado electrónico" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Casio CT-S300C2-ADAP</h3>
+                    <p class="producto-precio">S/769.90</p>
+                    <button class="producto-boton btn-agregar-carrito"
+                            data-id="prod2"
+                            data-nombre="Casio CT-S300C2-ADAP"
+                            data-precio="769.90"
+                            data-imagen="imagenes/teclado electrico.jpg">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="producto-card">
+                <img src="imagenes/Bateria1.jpg" alt="Batería para niños" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Batería para niños</h3>
+                    <p class="producto-precio">S/669.90</p>
+                    <button class="producto-boton btn-agregar-carrito"
+                            data-id="prod3"
+                            data-nombre="Batería para niños"
+                            data-precio="669.90"
+                            data-imagen="imagenes/Bateria1.jpg">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="producto-card">
+                <img src="imagenes/ukelele1.png" alt="Guitarra Concierto" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Guitarra Concierto</h3>
+                    <p class="producto-precio">S/455.90</p>
+                    <button class="producto-boton btn-agregar-carrito"
+                            data-id="prod4"
+                            data-nombre="Guitarra Concierto Flight DUC380 AMBER"
+                            data-precio="455.90"
+                            data-imagen="imagenes/ukelele1.png">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <div class="contenedor-pie">
+            <!-- Columna Horarios -->
+            <div class="columna">
+                <h3>Horarios de Atención</h3>
+                <div>
+                    <h4>Tienda Online</h4>
+                    <p>24/7 los 365 días</p>
+                </div>
+                <div>
+                    <h4>Tienda Física</h4>
+                    <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+                    <p>Sábados: 10:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Columna Contacto -->
+            <div class="columna">
+                <h3>Contacto</h3>
+                <div>
+                    <h4>Dirección:</h4>
+                    <p>Av. Parra 203, Arequipa</p>
+                    
+                    <h4>WhatsApp:</h4>
+                    <p><img src="imagenes/whatsapp.jpg" class="icono" alt="WhatsApp"> +51 999 999 999</p>
+                    
+                    <h4>Correo:</h4>
+                    <p><img src="imagenes/gmail.png" class="icono" alt="Email"> info@musicaparatodos.com</p>
+                    
+                    <h4>Redes Sociales:</h4>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/share/1CcAUHuAao/"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.tiktok.com/@musicaparatodos58?_t=ZM-8wjmH0Kyduv&_r=1"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Enlaces -->
+            <div class="columna">
+                <h3>Enlaces Rápidos</h3>
+                <div>
+                    <a href="sobre nosotros.html">Sobre Nosotros</a>
+                    <a href="soporte.html">Contacto y Soporte</a>
+                    <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="derechos">
+            <p>© 2025 Música para Todos</p>
+        </div>
+    </footer>
+    <script src="java/inicio.js" type="text/javascript"></script>
+</body>
+</html>

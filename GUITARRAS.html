@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guitarras - Música para todos</title>
+  <link href="Styles/INSTRUMENTOS.css" rel="stylesheet" type="text/css"/>
+  <link href="Styles/inicio.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="Encabezado">
+        <div class="logo">Musica para todos
+          <img class="imagen" src="imagenes/logo.jpg" alt="Logo">
+        </div>
+        <div class="unir_carrito">
+          <form id="formBusqueda" onsubmit="redirigir(); return false;">
+            <input type="text" id="buscador" placeholder="¿Qué estás buscando?" />
+            <button type="submit">Buscar</button>
+          </form>
+          <a href="carrito.html" class="carrito">🛒 Carrito de compras
+            <i class="fas fa-shopping-cart"></i>
+            <span class="contador-carrito">0</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="navegacion">
+        <a href="inicio.html">Inicio</a>
+        <div class="dropdown">
+          <a href="#Categorias" class="dropbtn">Categorías▼</a>
+          <div class="dropdown-content">
+            <a href="GUITARRAS.html">Guitarras</a>
+            <a href="BAJOS.html">Bajos</a>
+            <a href="BATERIA.html">Baterías</a>
+            <a href="PIANOS.html">Teclados</a>
+            <a href="accesorios.html">Accesorios</a>
+          </div>
+        </div>
+        <a href="INICIAR SECCION.html">Iniciar Sesión</a>
+        <a href="soporte.html">Contacto y Soporte</a>
+        <a href="sobre nosotros.html">Sobre Nosotros</a>
+        <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+        <a href="AprenderATocar.html">Profesores</a>
+      </nav>
+    </div>
+    <div class="marquesina">
+      ¡Descuento del 20% en los 2 primeros productos comprados! 🎶 
+    </div>
+  </header>
+
+  <main class="main-container">
+    <h1>Guitarras</h1>
+    <div class="grid-productos">
+      
+      <!-- Producto ejemplo (todos tienen misma estructura ahora) -->
+      <div class="producto">
+        <img src="IMAGENES/FENDER.jpeg" alt="Guitarra Fender"/>
+        <div class="producto-info">
+          <h3>Guitarra Acústica Fender</h3>
+          <p>S/899.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra1"
+                  data-nombre="Guitarra Acústica Fender"
+                  data-precio="899.00"
+                  data-imagen="IMAGENES/FENDER.jpeg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="IMAGENES/IBAÑEZ.jpeg" alt="Guitarra Ibanez"/>
+        <div class="producto-info">
+          <h3>Guitarra Eléctrica Ibanez</h3>
+          <p>S/1299.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra2"
+                  data-nombre="Guitarra Eléctrica Ibanez"
+                  data-precio="1299.00"
+                  data-imagen="IMAGENES/IBAÑEZ.jpeg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="IMAGENES/SEMIHUECA.jpeg" alt="Guitarra Semihueca"/>
+        <div class="producto-info">
+          <h3>Guitarra Eléctrica Semihueca</h3>
+          <p>S/1299.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra3"
+                  data-nombre="Guitarra Eléctrica Semihueca"
+                  data-precio="1299.00"
+                  data-imagen="IMAGENES/SEMIHUECA.jpeg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="IMAGENES/TELECASTER.jpeg" alt="Guitarra Telecaster"/>
+        <div class="producto-info">
+          <h3>Guitarra Eléctrica Telecaster</h3>
+          <p>S/1299.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra4"
+                  data-nombre="Guitarra Eléctrica Telecaster"
+                  data-precio="1299.00"
+                  data-imagen="IMAGENES/TELECASTER.jpeg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="IMAGENES/LES PAUL.jpeg" alt="Guitarra Les Paul"/>
+        <div class="producto-info">
+          <h3>Guitarra Eléctrica Les Paul</h3>
+          <p>S/1299.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra5"
+                  data-nombre="Guitarra Eléctrica Les Paul"
+                  data-precio="1299.00"
+                  data-imagen="IMAGENES/LES PAUL.jpeg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="IMAGENES/VOZZEX.jpg" alt="Guitarra Vozzex"/>
+        <div class="producto-info">
+          <h3>Guitarra Acústica Vozzex</h3>
+          <p>S/1299.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra6"
+                  data-nombre="Guitarra Acústica Vozzex"
+                  data-precio="1299.00"
+                  data-imagen="IMAGENES/VOZZEX.jpg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="IMAGENES/GIBSON.jpg" alt="Guitarra Gibson"/>
+        <div class="producto-info">
+          <h3>Guitarra Acústica Gibson</h3>
+          <p>S/1299.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra7"
+                  data-nombre="Guitarra Acústica Gibson"
+                  data-precio="1299.00"
+                  data-imagen="IMAGENES/GIBSON.jpg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="IMAGENES/YAMAHA.jpeg" alt="Guitarra Yamaha"/>
+        <div class="producto-info">
+          <h3>Guitarra Acústica Yamaha</h3>
+          <p>S/1299.00</p>
+          <button class="producto-boton btn-agregar-carrito"
+                  data-id="guitarra8"
+                  data-nombre="Guitarra Acústica Yamaha"
+                  data-precio="1299.00"
+                  data-imagen="IMAGENES/YAMAHA.jpeg">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor-pie">
+      <div class="columna">
+        <h3>Horarios de Atención</h3>
+        <div>
+          <h4>Tienda Online</h4>
+          <p>24/7 los 365 días</p>
+        </div>
+        <div>
+          <h4>Tienda Física</h4>
+          <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+          <p>Sábados: 10:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+
+      <div class="columna">
+        <h3>Contacto</h3>
+        <div>
+          <h4>Dirección:</h4>
+          <p>Av. Parra 203, Arequipa</p>
+          <h4>WhatsApp:</h4>
+          <p><img src="imagenes/whatsapp.jpg" class="icono" alt="WhatsApp"> +51 999 999 999</p>
+          <h4>Correo:</h4>
+          <p><img src="imagenes/gmail.png" class="icono" alt="Email"> info@musicaparatodos.com</p>
+          <h4>Redes Sociales:</h4>
+          <div class="redes">
+            <a href="https://www.facebook.com/share/1CcAUHuAao/"><img src="imagenes/facebook.png" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@musicaparatodos58?_t=ZM-8wjmH0Kyduv&_r=1"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="columna">
+        <h3>Enlaces Rápidos</h3>
+        <div>
+          <a href="sobre nosotros.html">Sobre Nosotros</a>
+          <a href="soporte.html">Contacto y Soporte</a>
+          <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+        </div>
+      </div>
+    </div>
+    <div class="derechos">
+      <p>© 2025 Música para Todos</p>
+    </div>
+  </footer>
+
+  <script src="java/inicio.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bajos - Música para todos</title>
+  <link href="Styles/INSTRUMENTOS.css" rel="stylesheet" type="text/css"/>
+  <link href="Styles/inicio.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Encabezado">
+                <div class="logo">Musica para todos
+                    <img class="imagen" src="imagenes/logo.jpg">
+                </div> 
+                <div class="unir_carrito">
+                    <!-- 🔍 BARRA DE BÚSQUEDA FUNCIONAL CON REDIRECCIÓN -->
+                    <form id="formBusqueda" onsubmit="redirigir(); return false;">
+                        <input type="text" id="buscador" placeholder="¿Qué estás buscando?" />
+                        <button type="submit">Buscar</button>
+                    </form>
+
+                    <a href="carrito.html" class="carrito">🛒 Carrito de compras
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <a href="inicio.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="#Categorias" class="dropbtn">Categorías▼</a>
+                    <div class="dropdown-content">
+                        <a href="GUITARRAS.html">Guitarras</a>
+                        <a href="BAJOS.html">Bajos</a>
+                        <a href="BATERIA.html">Baterías</a>
+                        <a href="PIANOS.html">Teclados</a>
+                        <a href="accesorios.html">Accesorios</a>
+                    </div>
+                </div>
+                <a href="INICIAR SECCION.html">Iniciar Sesion</a>
+                <a href="soporte.html">Contacto y Soporte</a>
+                <a href="sobre nosotros.html">Sobre Nosotros</a>
+                <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                <a href="AprenderATocar.html">Profesores</a>
+            </nav>
+        </div>
+        <div class="marquesina">
+            ¡Descuento del 20% en los 2 primeros productos comprados! 🎶 
+        </div>
+    </header>   
+
+  <main class="main-container">
+    <h1>Bajos</h1>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="IMAGENES/BAJO ELEC.jpg" alt=""/>
+        <div class="producto-info">
+        <h3>Bajo eléctrico</h3>
+        <p>S/899.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo1"
+                data-nombre="Bajo eléctrico"
+                data-precio="899.00"
+                data-imagen="IMAGENES/BAJO ELEC.jpg">
+            Añadir al carrito
+        </button>
+      </div>
+        </div>
+      <div class="producto">
+        <img src="IMAGENES/BAJO ACUS.jpeg" alt=""/>
+        <div class="producto-info">
+        <h3>Bajo acústico</h3>
+        <p>S/1299.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo2"
+                data-nombre="Bajo acústico"
+                data-precio="1299.00"
+                data-imagen="IMAGENES/BAJO ACUS.jpeg">
+            Añadir al carrito
+        </button>
+      </div>
+        </div>
+        <div class="producto">
+        <img src="IMAGENES/BAJO FRET.jpeg" alt=""/>
+        <div class="producto-info">
+        <h3>Bajo fretless</h3>
+        <p>S/1299.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo3"
+                data-nombre="Bajo fretless"
+                data-precio="1299.00"
+                data-imagen="IMAGENES/BAJO FRET.jpeg">
+            Añadir al carrito
+        </button>
+        </div>
+      </div>
+        <div class="producto">
+        <img src="IMAGENES/BAJO 5C.jpeg" alt=""/>
+
+        <div class="producto-info">
+        <h3>Bajo de 5 cuerdas</h3>
+        <p>S/1299.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo4"
+                data-nombre="Bajo de 5 cuerdas"
+                data-precio="1299.00"
+                data-imagen="IMAGENES/BAJO 5C.jpeg">
+            Añadir al carrito
+        </button>
+
+        </div>
+      </div>
+        <div class="producto">
+        <img src="IMAGENES/BAJO 6C.jpeg" alt=""/>
+        <div class="producto-info">
+        <h3>Bajo de 6 cuerdas</h3>
+        <p>S/1299.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo5"
+                data-nombre="Bajo de 6 cuerdas"
+                data-precio="1299.00"
+                data-imagen="IMAGENES/BAJO 6C.jpeg">
+            Añadir al carrito
+        </button>
+        </div>
+      </div>
+        <div class="producto">
+        <img src="IMAGENES/BAJO ACT.jpeg" alt=""/>
+        <div class="producto-info">
+        <h3>Bajo activo</h3>
+        <p>S/1299.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo6"
+                data-nombre="Bajo activo"
+                data-precio="1299.00"
+                data-imagen="IMAGENES/BAJO ACT.jpeg">
+            Añadir al carrito
+        </button>
+        </div>
+      </div>
+        <div class="producto">
+        <img src="IMAGENES/CONTRABAJO.jpeg" alt=""/>
+        <div class="producto-info">
+        <h3>Contrabajo</h3>
+        <p>S/1299.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo7"
+                data-nombre="Contrabajo"
+                data-precio="1299.00"
+                data-imagen="IMAGENES/CONTRABAJO.jpeg">
+            Añadir al carrito
+        </button>
+        </div>
+      </div>
+        <div class="producto">
+        <img src="IMAGENES/BAJO FEND.jpg" alt=""/>
+        <div class="producto-info">
+        <h3>Bajo Fender</h3>
+        <p>S/1299.00</p>
+        <button class="producto-boton btn-agregar-carrito"
+                data-id="bajo8"
+                data-nombre="Bajo Fender"
+                data-precio="1299.00"
+                data-imagen="IMAGENES/BAJO FEND.jpg">
+            Añadir al carrito
+        </button>
+      </div>
+        </div>
+    </div>
+  </main>
+    <footer class="pie">
+        <div class="contenedor-pie">
+            <!-- Columna Horarios -->
+            <div class="columna">
+                <h3>Horarios de Atención</h3>
+                <div>
+                    <h4>Tienda Online</h4>
+                    <p>24/7 los 365 días</p>
+                </div>
+                <div>
+                    <h4>Tienda Física</h4>
+                    <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+                    <p>Sábados: 10:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Columna Contacto -->
+            <div class="columna">
+                <h3>Contacto</h3>
+                <div>
+                    <h4>Dirección:</h4>
+                    <p>Av. Parra 203, Arequipa</p>
+                    
+                    <h4>WhatsApp:</h4>
+                    <p><img src="imagenes/whatsapp.jpg" class="icono" alt="WhatsApp"> +51 999 999 999</p>
+                    
+                    <h4>Correo:</h4>
+                    <p><img src="imagenes/gmail.png" class="icono" alt="Email"> info@musicaparatodos.com</p>
+                    
+                    <h4>Redes Sociales:</h4>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/share/1CcAUHuAao/"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.tiktok.com/@musicaparatodos58?_t=ZM-8wjmH0Kyduv&_r=1"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Enlaces -->
+            <div class="columna">
+                <h3>Enlaces Rápidos</h3>
+                <div>
+                    <a href="sobre nosotros.html">Sobre Nosotros</a>
+                    <a href="soporte.html">Contacto y Soporte</a>
+                    <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="derechos">
+            <p>© 2025 Música para Todos</p>
+        </div>
+    <script src="java/inicio.js" type="text/javascript"></script>
+
+</body>
+</html>
